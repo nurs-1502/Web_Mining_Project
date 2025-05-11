@@ -17,3 +17,16 @@ The final prediction is computed as the dot product of the user and product embe
 score = V_u * V_m (dot product)
 
 This scalar score reflects the compatibility between a given user and product and can be used for tasks like ranking, recommendation, or rating prediction. The two-tower architecture is particularly effective in large-scale recommendation systems, where it allows for efficient candidate generation and retrieval by separately encoding users and items.
+
+**Additionally, this project included matrix factorization using SVD and simple content-based approaches.
+
+Dataset:
+
+https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews/data  
+
+•	product_info: stores product information  
+•	reviews_0-250.csv: Contains reviews for products indexed from 0 to 250.  
+•	reviews_250-500.csv: Contains reviews for products indexed from 250 to 500.  
+•	reviews_500-750.csv: Contains reviews for products indexed from 500 to 750.  
+•	reviews_750-1250.csv: Contains reviews for products indexed from 750 to 1250.  
+•	reviews_1250-end.csv: Contains reviews for products indexed from 1250 to the last product in the dataset.  
