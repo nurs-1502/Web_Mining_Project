@@ -10,7 +10,7 @@ The user tower takes as input a rich set of features that reflect both user iden
 
 The product tower receives features that describe the product’s properties and overall appeal. These include numeric attributes such as price, average rating, and number of reviews, as well as binary indicators of availability and exclusivity, such as whether the product is new, limited edition, or sold exclusively by the platform. Categorical product descriptors like type, formulation, and category (e.g., makeup, skincare) provide contextual detail, while brand frequency and size-related attributes help capture product scale and popularity. These inputs are also passed through appropriate preprocessing layers to produce the product embedding vector V_m.
 
-Scoring
+Scoring:
 
 The final prediction is computed as the dot product of the user and product embedding vectors:
 
@@ -18,7 +18,7 @@ score = V_u * V_m (dot product)
 
 This scalar score reflects the compatibility between a given user and product and can be used for tasks like ranking, recommendation, or rating prediction. The two-tower architecture is particularly effective in large-scale recommendation systems, where it allows for efficient candidate generation and retrieval by separately encoding users and items.
 
-**Additionally, this project included matrix factorization using SVD and simple content-based approaches.
+**Additionally, this project included matrix factorization using SVD, as well as simple content-based and collaborative filtering approaches
 
 Dataset:
 
