@@ -18,7 +18,7 @@ score = V_u * V_m (dot product)
 
 This scalar score reflects the compatibility between a given user and product and can be used for tasks like ranking, recommendation, or rating prediction. The two-tower architecture is particularly effective in large-scale recommendation systems, where it allows for efficient candidate generation and retrieval by separately encoding users and items.
 
-**Additionally, this project included matrix factorization using SVD and simple content-based approaches.
+**Additionally, this project includes matrix factorization using SVD, as well as simple content-based and collaborative filtering approaches.
 
 Dataset:
 
