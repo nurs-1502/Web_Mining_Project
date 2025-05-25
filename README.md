@@ -4,11 +4,11 @@ A content-based neural network recommendation model consists of two parallel sub
 
 *User Subnetwork:
 
-The user subnetwork takes as input a rich set of features that reflect both user identity and behavior. These include unique identifiers like author_id, behavioral statistics such as average rating, number of reviews, and helpfulness score, as well as personal attributes like skin tone. Additionally, high-dimensional semantic information is provided through textual embeddings extracted from user-generated content, such as reviews. These features are processed through embedding and dense layers to produce a compact user embedding vector V_u that represents the user’s preferences.
+The user subnetwork takes as input a rich set of features that reflect both user identity and behavior. These include unique identifiers such as author_id, behavioral statistics like average rating, number of reviews, and helpfulness score, as well as personal attributes such as skin tone. Additionally, semantic information from user reviews is represented using TF-IDF and compressed via Truncated SVD. These features are processed through the user subnetwork’s layers to produce a compact user embedding vector V_u, which represents the user’s preferences.
 
 *Product Subnetwork:
 
-The product subnetwork receives features that describe the product’s properties and overall appeal. These include numeric attributes such as price, average rating, and number of reviews, as well as binary indicators of availability and exclusivity, such as whether the product is new, limited edition, or sold exclusively by the platform. Categorical product descriptors like type, formulation, and category (e.g., makeup, skincare) provide contextual detail, while brand frequency and size-related attributes help capture product scale and popularity. These inputs are also passed through appropriate preprocessing layers to produce the product embedding vector V_m.
+The product subnetwork receives features that describe the product’s properties and overall appeal. These include numerical attributes such as price, average rating, and number of reviews, as well as binary indicators of availability and exclusivity—such as whether the product is new, limited edition, or sold exclusively by the platform. Categorical product descriptors like type, formulation, and category (e.g., makeup, skincare) provide contextual detail, while brand frequency and size-related attributes help capture product scale and popularity. These inputs are also passed through the product subnetwork’s layers to produce the product embedding vector V_m.
 
 Scoring:
 
